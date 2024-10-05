@@ -1,19 +1,18 @@
 
-function jogar(palpite, numero){
-   
+function jogar(numero){
+
+    do{
+        var palpite = parseInt(prompt("Informe um palpite para adivinhar o número: "));
         if(palpite > numero){
-            console.log('Hmmmm, o número é maior que', palpite);
+            alert('Hmmmm, o número é menor que '+ palpite +'.');
         }else if(palpite < numero){
-            console.log('Hmmmm, o número é menor que', palpite);
-        }else{
-            console.log('Você acertou! O número é: ', numero);
+            alert('Hmmmm, o número é maior que '+ palpite +'.');
         }
+    }while(palpite != numero);
+
+    alert('Você acertou! O número é: '+ numero);
 }
 
-let numero = 47;
+var numero = 47;
 
-let palpite = parseInt(prompt("Informe um palpite para adivinhar o número: "));
-
-    while(palpite != numero){
-        jogar(palpite, numero);
-    }
+jogar(numero);
