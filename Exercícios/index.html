@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Construção de Interfaces Web (CIWB)</h1>
+        <div id="autores">
+            <h2>Professor: Marcelo Criscuolo <criscuolo@ifsp.edu.br></h2>
+            <h2>Aluna: Gabrielle Ulisses</h2>
+        </div>
+        <h3>JavaScript: estruturas de controle e arrays</h3>
+        <div id="instrucoes">
+            <h4>Instruções</h4>
+            <p>👩🏻‍💻 Abra o console do navegador para visualizar a execução do exercício.</p>
+        </div>
+    </header>
+    <main>
+        <section id="exercicio1">
+            <header>
+                <h2>Exercício 1</h2>
+                <p>Leia atentamente o código a seguir e complete o programa. Não altere o código atual. Apenas insira o código que falta no ponto indicado pelos comentários. Este programa deve mostrar os nomes contidos no array frutas, um por linha.</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        let frutas = ['abacaxi', 'banana', 'maçã', 'laranja', 'abacate', 'limão', 'tamarindo'];
+                        for (let i=0; /* complete aqui */) {
+                            let fruta = frutas[i];
+                            console.log(fruta);
+                        }
+                    </code>
+                </pre>
+                <button onclick="ex1()">Executar Exercício 1</button>    
+            </article>
+        </section>
+            
+
+        <section id="exercicio2">
+            <header>
+                <h2>Exercício 2</h2>
+                <p>João quer escrever um programa em JavaScript para encontrar a posição do menor elemento de um vetor (array). Ele começou assim:</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        const xs = [5, 3, 6, 1, 2, 4];
+                        // TODO terminar isso
+                    </code>
+                </pre>
+                <p>João tem trabalhado demais e acabou parando antes de terminar. Vocês moram na mesma república e você deve R$ 10,00 para João. Seria uma boa ideia você terminar o programa para seu amigo. Faça isso!</p>
+                <button onclick="ex2()">Executar Exercício 2</button>
+            </article>
+        </section>
+
+        <section id="exercicio3">
+            <header>
+                 <h2>Exercício 3</h2>
+                <p>Tal como a média, que é mais conhecida, a mediana é uma das maneiras de se representar um conjunto de valores por meio de um único número. É o que os estatísticos chamam de medida de resumo.</p>
+            </header>
+           <article>
+                <p>Se você tem um computador, calcular a mediana costuma ser bem fácil. Suponha que você tenha um conjunto de valores inteiros armazenados em um vetor. Tudo que você tem a fazer para obter a mediana é:</p>
+                <ul>
+                    <li>Ordenar os elementos contidos no vetor;</li>
+                    <li>Selecionar o elemento que está no meio.</li>
+                </ul>
+                <p>Quando a quantidade de elementos no vetor é ímpar — por exemplo, 5 elementos — basta selecionar o elemento que divide igualmente o vetor em duas partes iguais. Neste caso, seria o elemento que está na posição 2 (os índices começam em zero).</p>
+                <p>Mas quando a quantidade de elementos no vetor é par, você precisará calcular a média aritmética dos dois elementos que estão no meio. Por exemplo, se o vetor contém 6 elementos, a mediana será a média aritmética dos elementos 2 e 3.</p>
+                <p>Escreva um programa que calcule a mediana de um vetor de inteiros.</p>
+                <button onclick="ex3()">Executar Exercício 3</button>
+           </article>
+        </section>
+
+        <section id="exercicio4">
+            <header>
+                <h2>Exercício 4</h2>
+                <p>No código a seguir, veja o comando for-of, usado na linha 3. Complete o programa seguindo a instrução contida no comentário (/* */).</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        let frutas = ['abacaxi', 'banana', 'maçã', 'laranja', 'abacate', 'limão', 'tamarindo'];
+                        for (let fruta of /* insira aqui o nome do array */) {
+                            console.log(fruta);
+                        }
+                    </code>
+                </pre>
+                <p>Compare o comando for-of, usado aqui, com o for tradicional, que foi usado no Exercício 1. O comando for-of serve especialmente para iterar pelos elementos de um array.</p>
+                <button onclick="ex4()">Executar Exercício 4</button>
+            </article> 
+        </section>
+
+        <section id="exercicio5">
+            <header>
+                <h2>Exercício 5</h2>
+                <p>Use o comando for-of para exibir os valores contidos no array xs. O programa deve exibir um valor em cada linha.</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        let xs = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+                        /* insira aqui o comando `for-of` */
+                    </code>
+                </pre>
+                <button onclick="ex5()">Executar Exercício 5</button>
+            </article>  
+        </section>
+
+        <section id="exercicio6">
+            <header>
+                <h2>Exercício 6</h2>
+                <p>Complete o código a seguir. O programa deve:</p>
+                <ul>
+                    <li>Criar um array vazio, chamado inteiros.</li>
+                    <li>Preencher o array inteiros com números inteiros, de 1 até 10.</li>
+                    <li>Mostrar os números contidos no array em uma única linha, com os números separados por " - " (espaço, hífen, espaço).</li>
+                </ul>
+            </header>
+           <article>
+                <pre>
+                    <code>
+                        let inteiros = /* crie um _array_ vazio */;
+                        for (let i=1; /* complete aqui */) {
+                            /* use o método `push()` para adicionar elementos ao _array_ `inteiros` */
+                        }
+                        console.log(inteiros.join(/* complete aqui */));
+                    </code>
+                </pre>
+                <p>A saída do programa deve ficar assim:</p>
+                <p>1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10</p>
+                <button onclick="ex6()">Executar Exercício 6</button>
+           </article>
+        </section>
+
+        <section id="exercicio7">
+            <header>
+                <h2>Exercício 7</h2>
+                <p>Defina uma função chamada contarVogais(). Essa função deve receber uma palavra qualquer como parâmetro e retornar o número de vogais contidas nessa palavra.</p>
+                <p>Considere que sua função será usada da seguinte maneira:</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        /* defina a função aqui */
+                        let qtde = contarVogais('interestelar');
+                        console.log('Vogais:', qtde);
+                    </code>
+                </pre>
+                <button onclick="ex7()">Executar Exercício 7</button>
+            </article>
+        </section>
+
+        <section id="exercicio8">
+            <header>
+                <h2>Exercício 8</h2>
+                <p>Escreva um programa que crie um array chamado abrev (abreviações). Os elementos do array abrev devem corresponder às 3 primeiras letras de cada palavra contida no array frutas.</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        let frutas = ['abacaxi', 'banana', 'maçã', 'laranja', 'abacate', 'limão', 'tamarindo'];
+                        /* escreva o resto do programa aqui */
+                    </code>
+                </pre>
+                <p>Você deve iniciar sua implementação criando um array vazio; e depois preenchê-lo com os novos elementos, usando o comando for-of. Por fim, exiba os elementos do novo array, um por linha.</p>
+                <button onclick="ex8()">Executar Exercício 8</button>
+            </article>
+        </section>
+
+        <section id="exercicio9">
+            <header>
+                <h2>Exercício 9</h2>
+                <p>Repita o Exercício 8, fazendo com que todas as abreviações contidas no vetor abrev estejam em letras maiúsculas. O conteúdo do vetor frutas não deve ser alterado.</p>
+            </header>
+            <article>
+                <button onclick="ex9()">Executar Exercício 9</button>
+            </article>
+        </section>
+
+        <section id="exercicio10">
+            <header>
+                <h2>Exercício 10</h2>
+                <p>Francisco é uma gago diferente. Ele não somente fala repetindo sílabas como estranhamente também repete algumas sílabas ao digitar um texto. Francisco repete apenas sílabas que tenham exatamente 2 letras e nunca repete uma sílaba que não seja a primeira sílaba da palavra. Ele também repete apenas uma vez, ou seja a palavra bola, por exemplo, pode aparecer como bola ou bobola, nunca bobobola.</p>
+                <p>Seu trabalho é escrever um programa para traduzir textos digitados por Francisco. As constantes texto1 e texto2, no código-fonte a seguir, contém dois exemplos de textos, para que você possa testar seu programa.</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        const texto1 = 'Juca comprou fafarinha na memercearia e papagou 4 reais o quilo. A mamae de Juca pediu para ele comprar mamais 2 quilos.';
+                        const texto2 = 'O papassarinho vovoou para bem longe.';
+                    </code>
+                </pre>
+                <button onclick="ex10()">Executar Exercício 10</button>
+            </article>
+        </section>
+
+        <section id="exercicio11">
+            <header>
+                <h2>Exercício 11</h2>
+                <p>Júlio César usava um sistema de criptografia, agora conhecido como Cifra de César, que trocava cada letra pelo equivalente em duas posições adiante no alfabeto (por exemplo, 'A' vira 'C', 'R' vira 'T', etc.). Ao final do alfabeto nós voltamos para o começo, isto é 'Y' vira 'A'. Nós podemos, é claro, tentar trocar as letras com quaisquer número de posições.</p>
+                <p>Você deve completar o programa a seguir para que seja mostrada a mensagem secreta armazenada na variável secret. Sabemos que a mensagem foi codificada considerando um deslocamento de offset = 4 letras.</p>
+            </header>
+            <article>
+                <pre>
+                    <code>
+                        const offset = 4;
+                        const secret = 'LIPPSASVPH';
+                        let message = null;
+                        /* escreva aqui o código que decifra a mensagem */
+                        console.log(message);
+                    </code>
+                </pre>
+                <button onclick="ex11()">Executar Exercício 11</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/ex1.js"></script>
+    <script src="js/ex2.js"></script>
+    <script src="js/ex3.js"></script>
+    <script src="js/ex4.js"></script>
+    <script src="js/ex5.js"></script>
+    <script src="js/ex6.js"></script>
+    <script src="js/ex7.js"></script>
+    <script src="js/ex8.js"></script>
+    <script src="js/ex9.js"></script>
+    <script src="js/ex10.js"></script>
+    <script src="js/ex11.js"></script>
+</body>
+</html>
