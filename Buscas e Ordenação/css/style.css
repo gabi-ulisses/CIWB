@@ -18,8 +18,8 @@ body>header>h1, body>header>h2, body>header>h3{
 #autores{
     display: flex;    
     justify-content: space-evenly;
-
 }
+
 #autores>h2{
     font-size: 15px;
     color: #ffffff;
