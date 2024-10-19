@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Construção de Interfaces Web (CIWB)</h1>
+        <div id="autores">
+            <h2>Professor: Marcelo Criscuolo <criscuolo@ifsp.edu.br></h2>
+            <h2>Aluna: Gabrielle Ulisses</h2>
+        </div>
+        <h3>JavaScript: Arrays e funções</h3>
+        <div id="instrucoes">
+            <h4>Instruções</h4>
+            <p>👩🏻‍💻 Abra o console do navegador para visualizar a execução do exercício.</p>
+        </div>
+    </header>
+    <main>
+        <section id="exercicio1">
+            <header>
+                <h2>Exercício 1</h2>
+            </header>
+            <article>
+                <p>Defina uma função multiplo(a, b), que determine se b é múltiplo de a — ambos são números inteiros. A função deve retornar true, se b for múltiplo de a, ou false em caso contrário.</p>
+                <button onclick="multiplo(3,7)">Executar Exercício 1</button>    
+            </article>
+        </section>
+            
+
+        <section id="exercicio2">
+            <header>
+                <h2>Exercício 2</h2>
+            </header>
+            <article>
+                <p>Defina uma função e_vogal(c), que retorne true se o caracter c for uma vogal.</p>
+                <button onclick="e_vogal('a')">Executar Exercício 2</button>
+            </article>
+        </section>
+
+        <section id="exercicio3">
+            <header>
+                 <h2>Exercício 3</h2>
+            </header>
+           <article>
+                <p>Defina uma função que receba a hora atual por meio de três argumentos inteiros (hora, minuto e segundos) e então retorne o número de segundos decorridos desde a meia-noite.</p>
+                <button onclick="segundos(1, 40, 60)">Executar Exercício 3</button>
+           </article>
+        </section>
+
+        <section id="exercicio4">
+            <header>
+                <h2>Exercício 4</h2>
+            </header>
+            <article>
+                <p>Defina uma função que retorne o tempo decorrido entre dois instantes (dentro do mesmo dia). Sua função deve receber duas strings t1 e t2, no formato hh:mm:ss. Exemplo: para os argumentos '13:30:10' e '13:31:05', sua função deverá retornar 55 segundos.</p>
+                <button onclick="ex4()">Executar Exercício 4</button>
+            </article> 
+        </section>
+
+        <section id="exercicio5">
+            <header>
+                <h2>Exercício 5</h2>
+            </header>
+            <article>
+                <p>Defina uma função potencia(a, b) que retorne o valor de ab. Assuma que o expoente b é não-negativo. Implemente esta função manualmente. Não use a classe Math.</p>
+                <button onclick="potencia(2, 8)">Executar Exercício 5</button>
+            </article>  
+        </section>
+
+        <section id="exercicio6">
+            <header>
+                <h2>Exercício 6</h2>
+            </header>
+           <article>
+                <p>
+                    Foram anotadas as idades e alturas de 30 alunos em uma sala de aula. Faça um programa que determine quantos alunos com mais de 13 anos possuem altura inferior à média de alturas da sala. Você pode representar as idades em um vetor e as alturas em outro. Os dois vetores são paralelos — isto é, o elemento que estiver na posição i se refere à mesma pessoa.
+                    Você pode fixar os valores no código-fonte. Não é preciso fazer leitura de dados do teclado.
+                </p>
+                <button onclick="verificaIdade()">Executar Exercício 6</button>
+           </article>
+        </section>
+
+        <section id="exercicio7">
+            <header>
+                <h2>Exercício 7</h2>
+            </header>
+            <article>
+                <p>Observe os dois vetores no trecho de código a seguir.</p>
+                <pre>
+                    <code>
+                        const vet1 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+                        const vet2 = [20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
+                    </code>
+                </pre>
+                <script>
+                    const vet1 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+                    const vet2 = [20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
+                </script>
+                <button onclick="mesclar(vet1, vet2)">Executar Exercício 7</button>
+            </article>
+        </section>
+
+        <section id="exercicio8">
+            <header>
+                <h2>Exercício 8</h2>
+            </header>
+            <article>
+                <p>No trecho de código a seguir, observe o array xs. Você deve filtrá-lo deixando apenas os números ímpares. Use a função filter(), da classe Array.</p>
+                <pre>
+                    <code>
+                        const xs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                    </code>
+                </pre>
+                <script>
+                    const xs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                </script>
+                <button onclick="filter(xs)">Executar Exercício 8</button>
+            </article>
+        </section>
+
+        <section id="exercicio9">
+            <header>
+                <h2>Exercício 9</h2>
+            </header>
+            <article>
+                <p>O método Array.from() cria um vetor (array) a partir de um objeto iterável (iterable — uma série de valores que possam ser percorridos). Para compreender melhor, execute o código de exemplo a seguir no Console do seu navegador.</p>                
+                <pre>
+                    <code>
+                        const word = 'interestelar';
+                        Array.from(word);                    
+                    </code>
+                </pre>
+                <button onclick="ex9()">Executar Exercício 9</button>
+            </article>
+        </section>
+
+        <section id="exercicio10">
+            <header>
+                <h2>Exercício 10</h2>
+            </header>
+            <article>
+                <p>Escreva um programa que crie um array chamado abrev (abreviações). Os elementos de o array abrev devem corresponder às 3 primeiras letras de cada palavra contida no array frutas. Você deve usar o método Array.map().</p>
+                <pre>
+                    <code>
+                        let frutas = ['abacaxi', 'banana', 'maçã', 'laranja', 'abacate', 'limão', 'tamarindo'];
+                    </code>
+                </pre>
+                <script>
+                    let frutas = ['abacaxi', 'banana', 'maçã', 'laranja', 'abacate', 'limão', 'tamarindo'];
+                </script>
+                <button onclick="ex10(frutas)">Executar Exercício 10</button>
+            </article>
+        </section>
+
+        <section id="exercicio11">
+            <header>
+                <h2>Exercício 11</h2>
+            </header>
+            <article>
+                <p>Repita o Exercício 10, fazendo com que todas as abreviações contidas no vetor abrev estejam em letras maiúsculas. O conteúdo do vetor frutas não deve ser alterado. Você deve usar somente o método Array.map(). Não use for nem while.</p>
+                <button onclick="ex11(frutas)">Executar Exercício 11</button>
+            </article>
+        </section>
+        <section id="exercicio12">
+            <header>
+                <h2>Exercício 12</h2>
+            </header>
+            <article>
+                <p>Escreva um programa que transforme um array de palavras em um array que contenha o número de caracteres de cada palavra. Por exemplo: ['ovo', 'cebola', 'sabão'] → [3, 6, 5]. Você deve usar o método Array.map(). Comece com o código a seguir.</p>
+                <pre>
+                    <code>
+                        let palavras = ['ovo', 'cebola', 'sabão'];
+                    </code>
+                </pre>
+                <script>
+                    let palavras = ['ovo', 'cebola', 'sabão'];
+                </script>
+                <button onclick="ex12(palavras)">Executar Exercício 12</button>
+            </article>
+        </section>
+        <section id="exercicio13">
+            <header>
+                <h2>Exercício 13</h2>
+            </header>
+            <article>
+                <p>Repita o Exercício 12. Desta vez, você deve considerar somente as palavras que contenham a letra 'a'. As demais devem ser ignoradas.</p>
+                <button onclick="ex13(palavras)">Executar Exercício 13</button>
+            </article>
+        </section>
+        <section id="exercicio14">
+            <header>
+                <h2>Exercício 14</h2>
+            </header>
+            <article>
+                <p>
+                    Uma empresa comprou um lote de botas de diversos tamanhos para seus funcionários. Mas o fornecedor não entregou os pares organizados, como a empresa esperava. Em vez disso, entregou um monte de sapatos misturados. Seu tio, que é dono da empresa, pediu sua ajuda. Você deve desenvolver um programa que analise os dados da entrega e calcule quantos pares de sapato de cada tamanho que podem ser formados. É possível que sobrem sapatos sem par.
+                    Seu programa receberá como entrada uma sequência de valores no seguinte formato:
+                </p>
+                <p>Exemplo de valores de entrada:</p>
+                <pre>
+                    <code>
+                        38 E
+                        42 E
+                        39 E
+                        40 D
+                        38 D
+                        40 D
+                        37 E
+                        44 D
+                        37 D
+                        42 D
+                        41 E
+                        44 E
+                        37 E
+                        42 D
+                    </code>
+                </pre>
+                <p>
+                    A saída deve ser a quantidade de pares de cada tamanho. Veja um exemplo:
+                    Exemplo de saída:
+                </p>
+                <pre>
+                    <code>
+                        38 1
+                        42 2
+                        44 1
+                    </code>
+                </pre>
+                <script>
+                    let sapatos = ['38 E', '42 E', '39 E', '40 D', '38 D','40 D', '37 E', '44 D', '37 D', '42 D','41 E', '44 E', '37 E', '42 D'];
+                </script>
+                <button onclick="contarPares(sapatos)">Executar Exercício 14</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/ex1.js"></script>
+    <script src="js/ex2.js"></script>
+    <script src="js/ex3.js"></script>
+    <script src="js/ex4.js"></script>
+    <script src="js/ex5.js"></script>
+    <script src="js/ex6.js"></script>
+    <script src="js/ex7.js"></script>
+    <script src="js/ex8.js"></script>
+    <script src="js/ex9.js"></script>
+    <script src="js/ex10.js"></script>
+    <script src="js/ex11.js"></script>
+    <script src="js/ex12.js"></script>
+    <script src="js/ex13.js"></script>
+    <script src="js/ex14.js"></script>
+</body>
+</html>
