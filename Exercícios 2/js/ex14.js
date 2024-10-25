@@ -20,10 +20,7 @@ function contarPares(sapatos) {
         let pares = (paresE - (paresE % 1)) + (paresD - (paresD % 1)); // Soma dos pares
         
         if (pares > 0) {
-            console.log(tamanho + ' ' + pares);
+            console.log(pares + ' pares de sapato número '+ tamanho);
         }
     }
 }
-        
-        
-contarPares(sapatos);
