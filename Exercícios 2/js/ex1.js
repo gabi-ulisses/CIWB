@@ -8,3 +8,7 @@ function multiplo(a, b){
         return console.log(res);    
     }
 }
+
+function clearConsole(){
+    console. clear();
+}
