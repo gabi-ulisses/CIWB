@@ -1,0 +1,3 @@
+function clearConsole(){
+    console. clear();
+}
