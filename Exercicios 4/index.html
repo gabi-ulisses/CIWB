@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Objetos e formato JSON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Construção de Interfaces Web (CIWB)</h1>
+        <div id="autores">
+            <h2>Professor: Marcelo Criscuolo <criscuolo@ifsp.edu.br></h2>
+            <h2>Aluna: Gabrielle Ulisses</h2>
+        </div>
+        <h3>JavaScript: Objetos e formato JSON</h3>
+        <div id="instrucoes">
+            <h4>Instruções</h4>
+            <p>👩🏻‍💻 Abra o console do navegador para visualizar a execução do exercício.</p>
+        </div>
+    </header>
+    <div>
+        <button onclick="clearConsole()" id="clear">Limpar console.log</button>
+    </div>
+    <main>
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 1</h2>
+            </header>
+            <article>
+                <p>
+                    Uma funcionalidade bastante comum em sistemas de e-commerce é a de preencher os campos de um formulário de endereço (nome da rua, nome da cidade etc.) a partir de um CEP informado pelo usuário.
+                </p>
+                <p>
+                    Há serviços na web, como o <a href="https://viacep.com.br/" target="_blank">ViaCEP</a>, que retornam dados de um endereço para um dado CEP. O serviço recebe uma solicitação (request) HTTP contendo o CEP e responde com trecho de texto (string), contendo os dados do endereço no formato JSON. Veja um exemplo de resposta do serviço ViaCEP para o CEP 14802-000.
+                </p>
+                <pre>
+                    <code>
+                const data = {
+                    "cep": "14802-000",
+                    "logradouro": "Avenida Padre Francisco Sales Colturato",
+                    "complemento": "lado par",
+                    "unidade": "",
+                    "bairro": "Centro",
+                    "localidade": "Araraquara",
+                    "uf": "SP",
+                    "estado": "São Paulo",
+                    "regiao": "Sudeste",
+                    "ibge": "3503208",
+                    "gia": "1818",
+                    "ddd": "16",
+                    "siafi": "6163"
+                };
+                    </code>
+                </pre>
+                <p>
+                    Para sua conveniência, a resposta do serviço já foi atribuída à variável data neste exemplo. Em uma situação real, você precisaria usar o método JSON.parse() para fazer isso.
+                </p>
+                <p>
+                    Agora, você tem duas tarefas. Primeiro, você deve construir um formulário HTML que contenha os campos: - Logradouro - Bairro - Cidade - Estado
+                </p>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <form action="">
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" name="logradouro" id="logradouro">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade">
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado">
+                    </form>
+                </fieldset>
+                <p>
+                    Em seguida, dentro de um arquivo JavaScript, você deve definir uma função preencher(), que use o conteúdo da variável data para preencher os campos do formulário.
+                </p>
+                <p>
+                    Você deve executar a função manualmente, uma vez que nós ainda não aprendemos a trabalhar com eventos. Simplesmente chame a função no final do arquivo JavaScript, depois de defini-la.
+                </p>
+            </article>
+        </section>
+        
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 2</h2>
+            </header>
+            <article>
+                <p>
+                    No Exercício 1, cada propriedade do objeto foi representada em uma linha. Nós também podemos representar as propriedades de um objeto em uma única linha. Defina mais um objeto, <code>produto2</code>, para representar os dados a seguir.
+                </p>
+                <table>
+                    <caption class="title"><i>Tabela 2. Propriedades de um objeto um uma só linha</i></caption>
+                    <thead>
+                        <tr>
+                            <th >ID</th>
+                            <th >Nome</th>
+                            <th >Preço</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td >3</td>
+                            <td >Tinta para pincel para quadro branco</td>
+                            <td >R$12,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="exercicio2()">Executar Exercício 2</button>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 3</h2>
+            </header>
+            <article>
+                <p>Uma coleção de objetos pode ser representada como um array, em que cada elemento é um objeto. Defina um array de objetos para representar a seguinte coleção de produtos.</p>
+                <table>
+                    <caption><i>Tabela 3. Uma coleção de produtos</i></caption>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Desc. à vista</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Caneta BIC Cristal 0.7mm</td>
+                            <td>R$ 6,60</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Caneta Esferográfica Trilux</td>
+                            <td>R$ 5,50</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Lapiseira 0.5mm Pentel</td>
+                            <td>R$ 27,90</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Grafite Fino 0.5mm HB 2 Faber-Castell</td>
+                            <td>R$ 10,90</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Pincel quadro branco recarregável</td>
+                            <td>R$ 9,80</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            <button onclick="exercicio3()">Executar Exercício 3</button>
+            </article>
+        </section>
+
+    <script src="js/ex1.js"></script>
+    <script src="js/ex2.js"></script>
+    <script src="js/ex3.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>
