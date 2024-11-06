@@ -91,26 +91,36 @@
             </header>
             <article>
                 <p>
-                    No Exercício 1, cada propriedade do objeto foi representada em uma linha. Nós também podemos representar as propriedades de um objeto em uma única linha. Defina mais um objeto, <code>produto2</code>, para representar os dados a seguir.
+                    Suponha que você realizou uma consulta a um serviço web em busca de uma lista de produtos. Nessas situações, a resposta costuma ser uma string como a que foi atribuída à variável response, na listagem de código a seguir.
                 </p>
-                <table>
-                    <caption class="title"><i>Tabela 2. Propriedades de um objeto um uma só linha</i></caption>
+                <pre>
+                    <code>
+                const response = `[
+                    {"id": 1, "nome": "Chai", "preco": 18.0000, "estoque": 39},
+                    {"id": 2, "nome": "Chang", "preco": 19.0000, "estoque": 17},
+                    {"id": 3, "nome": "Aniseed Syrup", "preco": 10.0000, "estoque": 13},
+                    {"id": 4, "nome": "Chef Anton's Cajun Seasoning", "preco": 22.0000, "estoque": 53},
+                    {"id": 5, "nome": "Chef Anton's Gumbo Mix", "preco": 21.3500, "estoque": 0},
+                    {"id": 6, "nome": "Grandma's Boysenberry Spread", "preco": 25.0000, "estoque": 120},
+                    {"id": 7, "nome": "Uncle Bob's Organic Dried Pears", "preco": 30.0000, "estoque": 15},
+                    {"id": 8, "nome": "Northwoods Cranberry Sauce", "preco": 40.0000, "estoque": 6},
+                    {"id": 9, "nome": "Mishi Kobe Niku", "preco": 97.0000, "estoque": 29},
+                    {"id": 10, "nome": "Ikura", "preco": 31.0000, "estoque": 31}
+                ]`;
+                    </code>
+                </pre>
+                <table id="tabela-produtos">
                     <thead>
                         <tr>
-                            <th >ID</th>
-                            <th >Nome</th>
-                            <th >Preço</th>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Preço</th>
                         </tr>
                     </thead>
-                   <tbody>
-                        <tr>
-                            <td >3</td>
-                            <td >Tinta para pincel para quadro branco</td>
-                            <td >R$12,90</td>
-                        </tr>
+                    <tbody>
+                        <!-- Linhas de produtos serão adicionadas aqui pelo JavaScript -->
                     </tbody>
                 </table>
-                <button onclick="exercicio2()">Executar Exercício 2</button>
             </article>
         </section>
 
@@ -119,52 +129,8 @@
                 <h2>Exercício 3</h2>
             </header>
             <article>
-                <p>Uma coleção de objetos pode ser representada como um array, em que cada elemento é um objeto. Defina um array de objetos para representar a seguinte coleção de produtos.</p>
-                <table>
-                    <caption><i>Tabela 3. Uma coleção de produtos</i></caption>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nome</th>
-                            <th>Preço</th>
-                            <th>Desc. à vista</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Caneta BIC Cristal 0.7mm</td>
-                            <td>R$ 6,60</td>
-                            <td>10%</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Caneta Esferográfica Trilux</td>
-                            <td>R$ 5,50</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Lapiseira 0.5mm Pentel</td>
-                            <td>R$ 27,90</td>
-                            <td>15%</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Grafite Fino 0.5mm HB 2 Faber-Castell</td>
-                            <td>R$ 10,90</td>
-                            <td>5%</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Pincel quadro branco recarregável</td>
-                            <td>R$ 9,80</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-            <button onclick="exercicio3()">Executar Exercício 3</button>
+                <p>Crie uma função removerLinha(id) que remova uma linha inteira da tabela criada no Exercício 2. A função deve receber id do produto que corresponde à linha que será removida.</p>
+                <button onclick="removerLinha(1)">Remover Produto com ID 1</button>
             </article>
         </section>
 
