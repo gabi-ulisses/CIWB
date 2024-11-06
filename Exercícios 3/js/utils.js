@@ -1,3 +1,0 @@
-function clearConsole(){
-    console. clear();
-}
