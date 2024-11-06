@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Objetos e formato JSON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Construção de Interfaces Web (CIWB)</h1>
+        <div id="autores">
+            <h2>Professor: Marcelo Criscuolo <criscuolo@ifsp.edu.br></h2>
+            <h2>Aluna: Gabrielle Ulisses</h2>
+        </div>
+        <h3>JavaScript: Objetos e formato JSON</h3>
+        <div id="instrucoes">
+            <h4>Instruções</h4>
+            <p>👩🏻‍💻 Abra o console do navegador para visualizar a execução do exercício.</p>
+        </div>
+    </header>
+    <div>
+        <button onclick="clearConsole()" id="clear">Limpar console.log</button>
+    </div>
+    <main>
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 1</h2>
+            </header>
+            <article>
+                <p>
+                    Defina um objeto, chamado produto, para representar os dados a seguir.
+                </p>
+                <table>
+                    <caption class="title"><i>Tabela 1. Propriedades do objeto produto</i></caption>
+                    <thead>
+                        <tr>
+                            <th >Propriedade</th>
+                            <th >Valor</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td >ID</td>
+                            <td >2</td>
+                        </tr>
+                        <tr>
+                            <td >Nome</td>
+                            <td >Pincel para quadro branco</td>
+                        </tr>
+                        <tr>
+                            <td >Preço</td>
+                            <td >R$6,90</td>
+                        </tr>
+                   </tbody>
+                </table>
+                <button onclick="exercicio1()">Executar Exercício 1</button>    
+            </article>
+        </section>
+        
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 2</h2>
+            </header>
+            <article>
+                <p>
+                    No Exercício 1, cada propriedade do objeto foi representada em uma linha. Nós também podemos representar as propriedades de um objeto em uma única linha. Defina mais um objeto, <code>produto2</code>, para representar os dados a seguir.
+                </p>
+                <table>
+                    <caption class="title"><i>Tabela 2. Propriedades de um objeto um uma só linha</i></caption>
+                    <thead>
+                        <tr>
+                            <th >ID</th>
+                            <th >Nome</th>
+                            <th >Preço</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                        <tr>
+                            <td >3</td>
+                            <td >Tinta para pincel para quadro branco</td>
+                            <td >R$12,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="exercicio2()">Executar Exercício 2</button>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 3</h2>
+            </header>
+            <article>
+                <p>Uma coleção de objetos pode ser representada como um array, em que cada elemento é um objeto. Defina um array de objetos para representar a seguinte coleção de produtos.</p>
+                <table>
+                    <caption><i>Tabela 3. Uma coleção de produtos</i></caption>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Desc. à vista</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Caneta BIC Cristal 0.7mm</td>
+                            <td>R$ 6,60</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Caneta Esferográfica Trilux</td>
+                            <td>R$ 5,50</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Lapiseira 0.5mm Pentel</td>
+                            <td>R$ 27,90</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Grafite Fino 0.5mm HB 2 Faber-Castell</td>
+                            <td>R$ 10,90</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Pincel quadro branco recarregável</td>
+                            <td>R$ 9,80</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            <button onclick="exercicio3()">Executar Exercício 3</button>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 4</h2>
+            </header>
+            <article>
+                <p>Considere o array definido no Exercício 3. Escreva um programa que mostre — no console — o nome e o preço do terceiro produto que consta na lista.</p>
+                <button onclick="exercicio4()">Executar Exercício 4</button>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 5</h2>
+            </header>
+            <article>
+                <p>Ainda considerando o array definido no Exercício 3, escreva um programa que mostre o nome e o preço dos produtos que:</p>
+                  <ul>
+                    <li>Custam menos de R$ 10,00;</li>
+                    <li>Não têm desconto no preço à vista.</li>
+                  </ul>
+                 <button onclick="exercicio5()">Executar Exercício 5</button>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 6</h2>
+            </header>
+            <article>
+                <p>Considere que os itens listados na tabela do Exercício 3 representam o conteúdo de um carrinho de compras. Escreva um programa que mostre:</p>
+                <ul>
+                   <li>O total a pagar sem os descontos;</li>
+                   <li>O total a pagar considerando os descontos;</li>
+                </ul>
+                <button onclick="exercicio6()">Executar Exercício 6</button>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 7</h2>
+            </header>
+            <article>
+                <p>Foram anotadas as idades e alturas de 30 alunos em uma sala de aula. Faça um programa que determine quantos alunos com mais de 13 anos possuem altura inferior à média de alturas da sala.</p>
+                <p>Você deve representar as idades em um vetor (array) de objetos. Cada objeto representará um aluno, que tem idade e altura. Veja um exemplo:</p>
+<pre>
+    <code>
+const alunos = [
+    {idade: 13, altura: 1.40},
+    {idade: 14, altura: 1.55},
+    /* (...) */
+];
+    </code>
+</pre>
+                <p>Você pode fixar os valores no código-fonte. Não é preciso fazer leitura de dados do teclado.</p>
+                <button onclick="exercicio7()">Executar Exercício 7</button>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 8</h2>
+            </header>
+            <article>
+                <p>Uma empresa comprou um lote de botas de diversos tamanhos para seus funcionários. Mas o fornecedor não entregou os pares organizados, como a empresa esperava. Em vez disso, entregou um monte de sapatos misturados. Seu tio, que é dono da empresa, pediu sua ajuda. Você deve desenvolver um programa que analise os dados da entrega e calcule quantos pares de sapato de cada tamanho que podem ser formados. É possível que sobrem sapatos sem par.</p>
+
+<p>Seu programa receberá como entrada uma sequência de valores no seguinte formato:</p>
+
+<pre>
+Exemplo de valores de entrada
+38 E
+42 E
+39 E
+40 D
+38 D
+40 D
+37 E
+44 D
+37 D
+42 D
+41 E
+44 E
+37 E
+42 D
+</pre>
+
+<p>💡 Você pode usar um software de planilhas — MS Excel ou LibreOffice Calc — para gerar um objeto literal a partir dessa entrada em duas colunas. Isso pode facilitar seu trabalho. Você precisará concatenar texto com valores de células, usando uma fórmula parecida com a seguinte:</p>
+
+<pre>
+="{tamanho: " & A1 & ", pe: '" & B1 & "'},"
+</pre>
+
+<p>A saída deve ser a quantidade de pares de cada tamanho. Veja um exemplo:</p>
+
+<pre>
+Exemplo de saída
+38 1
+42 2
+44 1
+</pre>
+
+<p><strong>Requisito</strong>  
+Desta vez, você deve resolver este exercício usando arrays de objetos, assim como foi feito no Exercício 7.</p>
+                <button onclick="exercicio8()">Executar Exercício 8</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="js/ex1.js"></script>
+    <script src="js/ex2.js"></script>
+    <script src="js/ex3.js"></script>
+    <script src="js/ex4.js"></script>
+    <script src="js/ex5.js"></script>
+    <script src="js/ex6.js"></script>
+    <script src="js/ex7.js"></script>
+    <script src="js/ex8.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>

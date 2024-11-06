@@ -1,0 +1,134 @@
+body {
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e9ec;
+}
+
+body>header{
+    background-color: #063351;
+    padding: 10px;
+}
+
+body>header>h1, body>header>h2, body>header>h3{
+    color: #fff;
+}
+
+#clear{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #041538c9;
+}
+
+#autores{
+    display: flex;    
+    justify-content: space-evenly;
+
+}
+#autores>h2{
+    font-size: 15px;
+    color: #ffffff;
+    text-align: left;
+    
+}
+h1, h2, h3, h4 {
+    color: #333;
+    text-align: center;
+}
+
+#instrucoes>h4{
+    color: #333;
+    text-align: left;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+pre {
+    background-color: #000000;
+    color: #ddd;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #063351;
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0px 1px 1px #07162c;
+}
+
+button:hover {
+    background-color: #04283f;
+}
+
+button:active {
+    background-color: #04283f;
+    box-shadow: 0 2px #020d1c;
+    transform: translateY(4px);
+}
+
+#instrucoes, .exercicios {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+caption{
+    text-align: left;
+}
+
+table {
+    text-align: left;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+td {
+    background-color: #eeeeee;
+}
+
+th {
+    background-color: #e6e6e6;
+}
