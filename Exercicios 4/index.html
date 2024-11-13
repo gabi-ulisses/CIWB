@@ -23,9 +23,6 @@
             <p>👩🏻‍💻 Abra o console do navegador para visualizar a execução do exercício.</p>
         </div>
     </header>
-    <div>
-        <button onclick="clearConsole()" id="clear">Limpar console.log</button>
-    </div>
     <main>
         <section class="exercicios">
             <header>
@@ -109,6 +106,15 @@
                 ]`;
                     </code>
                 </pre>
+                <p>
+                    Você deverá criar uma tabela dinamicamente usando esses dados. Comece criando uma página que contenha uma tabela vazia, em que haja apenas os cabeçalhos das colunas: - ID - Produto - Preço
+                </p>
+                <p>
+                    Crie um arquivo JavaScript contendo uma função preencherTabela(). Essa função deverá usar os dados contidos na variável response para criar as linhas da tabela dinamicamente. Antes de usar esses dados, transforme-os em um array de objetos usando o método JSON.parse() — veja a documentação <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank">aqui</a>.
+                </p>
+                <p>
+                   Execute a função preencherTabela() manualmente. Não é preciso se preocupar com eventos neste momento.
+                </p>
                 <table id="tabela-produtos">
                     <thead>
                         <tr>
@@ -118,7 +124,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Linhas de produtos serão adicionadas aqui pelo JavaScript -->
+
                     </tbody>
                 </table>
             </article>
@@ -137,6 +143,5 @@
     <script src="js/ex1.js"></script>
     <script src="js/ex2.js"></script>
     <script src="js/ex3.js"></script>
-    <script src="js/utils.js"></script>
 </body>
 </html>
