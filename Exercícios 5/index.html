@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Tratamento de Eventos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Construção de Interfaces Web (CIWB)</h1>
+        <div id="autores">
+            <h2>Professor: Marcelo Criscuolo <criscuolo@ifsp.edu.br></h2>
+            <h2>Aluna: Gabrielle Ulisses</h2>
+        </div>
+        <h3>JavaScript: Tratamento de Eventos</h3>
+        <div id="instrucoes">
+            <h4>Instruções</h4>
+            <p>👩🏻‍💻 Abra o console do navegador para visualizar a execução do exercício.</p>
+        </div>
+    </header>
+    <div>
+        <button onclick="clearConsole()" id="clear">Limpar console.log</button>
+    </div>
+    <main>
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 1</h2>
+            </header>
+            <article>
+                <p>
+                    Crie uma página contendo o código HTML com uma seleção de marcas de carro. Ao selecionar uma marca, exiba uma imagem do logotipo correspondente.
+                </p>
+                <pre><code>
+                &lt;select id="marca"&gt;
+                    &lt;option value="audi"&gt;Audi&lt;/option&gt;
+                    &lt;option value="bmw"&gt;BMW&lt;/option&gt;
+                    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;
+                    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+                &lt;/select&gt;
+                </code></pre>
+                <p>Utilize o evento <code>change</code> e o método <code>addEventListener()</code> para detectar mudanças na seleção e exibir o logotipo.</p>
+                <div>
+                    <select id="marca">
+                        <option value="Selecione">Selecione</option>
+                        <option value="audi">Audi</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                    <img id="logo" src="" alt="Logo da Marca" style="display:none; width:100px; height:auto;">
+                </div>
+                
+            </article>
+        </section>
+        
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 2</h2>
+            </header>
+            <article>
+                <p>
+                    Faça um parágrafo sumir quando receber um clique. Aplique uma nova classe CSS para ocultar o parágrafo.
+                </p>
+                <p id="paragrafo">Clique aqui para me fazer desaparecer.</p>
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 3</h2>
+            </header>
+            <article>
+                <p>Crie cinco botões, cada um com um <em>id</em> único. Ao clicar, exiba o <em>id</em> no console, usando o mesmo <em>listener</em> para todos os botões.</p>
+                <div>
+                    <button id="btn1">Botão 1</button>
+                    <button id="btn2">Botão 2</button>
+                    <button id="btn3">Botão 3</button>
+                    <button id="btn4">Botão 4</button>
+                    <button id="btn5">Botão 5</button>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 4</h2>
+            </header>
+            <article>
+                <p>
+                    Crie um botão que, ao ser clicado, adicione um novo parágrafo com o texto "Oi, mundo!" dentro de um <code>&lt;div&gt;</code>. Use o argumento <code>e</code> para obter a referência ao <code>&lt;div&gt;</code>.
+                </p>
+                <pre><code>
+                &lt;div&gt;
+                    &lt;button id="btn"&gt;OK&lt;/button&gt;
+                &lt;/div&gt;
+                </code></pre>
+                <div>
+                    <button id="btn">OK</button>
+                </div>                
+            </article>
+        </section>
+
+        <section class="exercicios">
+            <header>
+                <h2>Exercício 5</h2>
+            </header>
+            <article>
+                <p>
+                    Em uma tabela de produtos com colunas Descrição e Preço, adicione uma coluna com um link <em>Remover</em>. Ao clicar, a linha inteira deve ser removida. Use o mesmo <em>listener</em> para todos os links.
+                </p>
+            </article>
+            <table id="tabela-produtos">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Produto 1</td>
+                        <td>R$ 10,00</td>
+                        <td><a href="#" class="remover">Remover</a></td>
+                    </tr>
+                    <tr>
+                        <td>Produto 2</td>
+                        <td>R$ 20,00</td>
+                        <td><a href="#" class="remover">Remover</a></td>
+                    </tr>
+                    <tr>
+                        <td>Produto 3</td>
+                        <td>R$ 30,00</td>
+                        <td><a href="#" class="remover">Remover</a></td>
+                    </tr>
+                    <tr>
+                        <td>Produto 4</td>
+                        <td>R$ 40,00</td>
+                        <td><a href="#" class="remover">Remover</a></td>
+                    </tr>
+                    <tr>
+                        <td>Produto 5</td>
+                        <td>R$ 50,00</td>
+                        <td><a href="#" class="remover">Remover</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+    </main>
+
+    <script src="js/ex1.js"></script>
+    <script src="js/ex2.js"></script>
+    <script src="js/ex3.js"></script>
+    <script src="js/ex4.js"></script>
+    <script src="js/ex5.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>
