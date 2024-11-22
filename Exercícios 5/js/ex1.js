@@ -17,3 +17,15 @@ document.getElementById("marca").addEventListener("change", function() {
         logo.style.display = "none"; // Esconde a imagem se a marca não for encontrada
     }
 });
+
+/**
+ * document.addEventListener('DOMContentLoaded', function(){
+ *      const select = document.querySelector('#marca');
+ *      select.addEventListener('change', function() {
+ *          const img = document.querySelector('#logo');
+ *          img.src = select.value + '.png';
+ * 
+ *      });
+ * });
+ * 
+ */
