@@ -1,7 +1,12 @@
 function myListener(e) {
-    const div = e.target.parentNode;
+    
+    const btn = e.target;
+    const div = btn.parentElement;
+
     const p = document.createElement("p");
+
     p.textContent = "Oi, mundo!";
+
     div.appendChild(p);
 }
 
