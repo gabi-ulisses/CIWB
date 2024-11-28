@@ -1,14 +1,10 @@
-function myListener(e) {
-    
-    const btn = e.target;
-    const div = btn.parentElement;
+document.addEventListener('DOMContentLoaded', function () {
+    const btnAdicionarParagrafo = document.getElementById('btn');
+    const container = btnAdicionarParagrafo.parentElement;
 
-    const p = document.createElement("p");
-
-    p.textContent = "Oi, mundo!";
-
-    div.appendChild(p);
-}
-
-const btn = document.getElementById("btn");
-btn.addEventListener("click", myListener);
+    btnAdicionarParagrafo.addEventListener('click', function () {
+        const novoParagrafo = document.createElement('p');
+        novoParagrafo.textContent = 'Oi, mundo!';
+        container.appendChild(novoParagrafo);
+    });
+});

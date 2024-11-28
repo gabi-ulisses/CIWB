@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.produto {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+#itensCarrinho td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Carrinho de Compras</h1>
+
+    <h2>Lista de Produtos</h2>
+    <div>
+        <div class="produto" data-id="1">
+            <span>Produto 1</span>
+            <span>R$ 10,00</span>
+            <button class="adicionar">Adicionar ao carrinho</button>
+        </div>
+        <div class="produto" data-id="2">
+            <span>Produto 2</span>
+            <span>R$ 20,00</span>
+            <button class="adicionar">Adicionar ao carrinho</button>
+        </div>
+    </div>
+
+    <h2>Carrinho de Compras</h2>
+    <table id="itensCarrinho">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h3>Resumo da Compra</h3>
+    <p>Total: R$ <span id="total">0.00</span></p>
+    <p>Quantidade de itens: <span id="quantidade">0</span></p>
+    <button id="esvaziarCarrinho">Esvaziar Carrinho</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

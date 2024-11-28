@@ -1,6 +1,9 @@
-function showId(event) {
-    console.log("ID do botão:", event.target.id);
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const botoes = document.querySelectorAll('button[id^="btn"]');
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach(button => button.addEventListener("click", showId));
+    botoes.forEach(function (botao) {
+        botao.addEventListener('click', function () {
+            console.log(`Botão clicado: ${botao.id}`);
+        });
+    });
+});
