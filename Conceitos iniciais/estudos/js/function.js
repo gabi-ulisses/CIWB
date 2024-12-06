@@ -16,6 +16,6 @@ processar(100, function(step){
 
 Forma 4:
 
-let somar = (a,b) => a + b;
+let somar =(a,b) => a + b;
 
 */

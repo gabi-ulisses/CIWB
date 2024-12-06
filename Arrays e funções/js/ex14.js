@@ -1,25 +1,25 @@
-function contarPares(sapatos) {
+function contarPares(sapatos){
 
-    let contagem = {};
+    let contagem ={};
     
-    for (let i = 0; i < sapatos.length; i++) {
+    for(let i = 0; i < sapatos.length; i++){
         let sapato = sapatos[i];
         let tamanho = sapato.split(' ')[0];
         let lado = sapato.split(' ')[1];
     
-        if (!contagem[tamanho]) {
-            contagem[tamanho] = { E: 0, D: 0 };
+        if(!contagem[tamanho]){
+            contagem[tamanho] ={ E: 0, D: 0 };
         }
     
         contagem[tamanho][lado]++;
     }
         
-    for (let tamanho in contagem) {
+    for(let tamanho in contagem){
         let paresE = contagem[tamanho]['E'] / 2;
         let paresD = contagem[tamanho]['D'] / 2;
-        let pares = (paresE - (paresE % 1)) + (paresD - (paresD % 1)); // Soma dos pares
+        let pares =(paresE -(paresE % 1)) +(paresD -(paresD % 1)); // Soma dos pares
         
-        if (pares > 0) {
+        if(pares > 0){
             console.log(pares + ' pares de sapato número '+ tamanho);
         }
     }

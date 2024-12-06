@@ -1,4 +1,4 @@
-body {
+body{
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -26,7 +26,7 @@ body>header>h1, body>header>h2, body>header>h3{
     text-align: left;
     
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4{
     color: #333;
     text-align: center;
 }
@@ -38,31 +38,31 @@ h1, h2, h3, h4 {
     margin-top: 0px;
 }
 
-h1 {
+h1{
     font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
-h2 {
+h2{
     font-size: 2em;
     margin-bottom: 0.5em;
 }
 
-h3 {
+h3{
     font-size: 1.75em;
     margin-bottom: 0.5em;
 }
 
-h4 {
+h4{
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 
-p {
+p{
     margin-bottom: 1em;
 }
 
-pre {
+pre{
     background-color: #000000;
     color: #ddd;
     border: 1px solid #ddd;
@@ -70,11 +70,11 @@ pre {
     overflow-x: auto;
 }
 
-code {
+code{
     font-family: "Courier New", Courier, monospace;
 }
 
-button {
+button{
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -89,17 +89,17 @@ button {
     box-shadow: 0px 1px 1px #07162c;
 }
 
-button:hover {
+button:hover{
     background-color: #04283f;
 }
 
-button:active {
+button:active{
     background-color: #04283f;
     box-shadow: 0 2px #020d1c;
     transform: translateY(4px);
 }
 
-#instrucoes,#exercicio1, #exercicio2, #exercicio3, #exercicio4, #exercicio5, #exercicio6, #exercicio7, #exercicio8, #exercicio9, #exercicio10, #exercicio11 {
+#instrucoes,#exercicio1, #exercicio2, #exercicio3, #exercicio4, #exercicio5, #exercicio6, #exercicio7, #exercicio8, #exercicio9, #exercicio10, #exercicio11{
     background: #fff;
     margin: 20px;
     padding: 20px;

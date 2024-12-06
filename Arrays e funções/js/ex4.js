@@ -1,17 +1,17 @@
-function segundos(h, m, s) {
-    return (h * 3600) + (m * 60) + s;
+function segundos(h, m, s){
+    return(h * 3600) +(m * 60) + s;
 }
     
-    function tempoDecorrido(t1, t2) {
+    function tempoDecorrido(t1, t2){
         const [h1, m1, s1] = t1.split(':').map(Number);
         const [h2, m2, s2] = t2.split(':').map(Number);
         
         const tempo1 = segundos(h1, m1, s1);
         const tempo2 = segundos(h2, m2, s2);
     
-        if (tempo1 > tempo2) {
+        if(tempo1 > tempo2){
             return tempo1 - tempo2;
-        } else {
+        } else{
             return tempo2 - tempo1;
         }
     }

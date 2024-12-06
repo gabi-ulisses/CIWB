@@ -3,10 +3,10 @@ function corrigirTexto(texto){
     let i = 0;
 
     while(i < texto.length){
-        if (i + 3 < texto.length && texto[i] === texto[i + 2] && texto[i + 1] === texto[i + 3]) {
+        if(i + 3 < texto.length && texto[i] === texto[i + 2] && texto[i + 1] === texto[i + 3]){
             textoCorrigido += texto[i] + texto[i + 1];
             i += 4; 
-        } else {
+        } else{
             textoCorrigido += texto[i];
             i++;
         }

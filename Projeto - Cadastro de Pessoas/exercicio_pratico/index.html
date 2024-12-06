@@ -1,0 +1,65 @@
+<!--
+    Ana Beatriz Rocha Duarte - AQ3029808
+    Gabrielle Ulisses dos Santos Silva - AQ3030512
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de pessoas</h1>
+    <fieldset>
+        <legend>Dados para Cadastro</legend>
+        <form id="forms">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome...">
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="0" max="110" required>
+
+            <label for="tel">Telefone:</label>
+            <input type="text" id="tel" placeholder="9999999999">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" placeholder="Digite a cidade que reside...">
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" placeholder="Digite o estado que reside...">
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" placeholder="Digite o país que reside...">
+
+            <input type="submit" value="Cadastrar">
+            <button type="reset">Limpar</button>
+        </form>
+   </fieldset>
+        <h2>Pessoas cadastradas:</h2>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome completo</th>
+                    <th>Idade</th>
+                    <th>Telefone</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>País</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Total de pessoas cadastradas: <b id="total"></b></td>
+                </tr>
+            </tfoot>
+        </table> 
+    <script src="script.js"></script>
+</body>
+</html>

@@ -12,12 +12,12 @@
 </head>
 <body>
     <header>
-        <h1>Construção de Interfaces Web (CIWB)</h1>
+        <h1>Construção de Interfaces Web(CIWB)</h1>
         <div id="autores">
             <h2>Professor: Marcelo Criscuolo <criscuolo@ifsp.edu.br></h2>
             <h2>Aluna: Gabrielle Ulisses</h2>
         </div>
-        <h3>JavaScript: DOM (Document Object Model — Modelo de Objetos de Documento)</h3>
+        <h3>JavaScript: DOM(Document Object Model — Modelo de Objetos de Documento)</h3>
         <div id="instrucoes">
             <h4>Instruções</h4>
             <p>👩🏻‍💻 Abra o console do navegador para visualizar a execução do exercício.</p>
@@ -30,14 +30,14 @@
             </header>
             <article>
                 <p>
-                    Uma funcionalidade bastante comum em sistemas de e-commerce é a de preencher os campos de um formulário de endereço (nome da rua, nome da cidade etc.) a partir de um CEP informado pelo usuário.
+                    Uma funcionalidade bastante comum em sistemas de e-commerce é a de preencher os campos de um formulário de endereço(nome da rua, nome da cidade etc.) a partir de um CEP informado pelo usuário.
                 </p>
                 <p>
-                    Há serviços na web, como o <a href="https://viacep.com.br/" target="_blank">ViaCEP</a>, que retornam dados de um endereço para um dado CEP. O serviço recebe uma solicitação (request) HTTP contendo o CEP e responde com trecho de texto (string), contendo os dados do endereço no formato JSON. Veja um exemplo de resposta do serviço ViaCEP para o CEP 14802-000.
+                    Há serviços na web, como o <a href="https://viacep.com.br/" target="_blank">ViaCEP</a>, que retornam dados de um endereço para um dado CEP. O serviço recebe uma solicitação(request) HTTP contendo o CEP e responde com trecho de texto(string), contendo os dados do endereço no formato JSON. Veja um exemplo de resposta do serviço ViaCEP para o CEP 14802-000.
                 </p>
                 <pre>
                     <code>
-                const data = {
+                const data ={
                     "cep": "14802-000",
                     "logradouro": "Avenida Padre Francisco Sales Colturato",
                     "complemento": "lado par",
@@ -93,16 +93,16 @@
                 <pre>
                     <code>
                 const response = `[
-                    {"id": 1, "nome": "Chai", "preco": 18.0000, "estoque": 39},
-                    {"id": 2, "nome": "Chang", "preco": 19.0000, "estoque": 17},
-                    {"id": 3, "nome": "Aniseed Syrup", "preco": 10.0000, "estoque": 13},
-                    {"id": 4, "nome": "Chef Anton's Cajun Seasoning", "preco": 22.0000, "estoque": 53},
-                    {"id": 5, "nome": "Chef Anton's Gumbo Mix", "preco": 21.3500, "estoque": 0},
-                    {"id": 6, "nome": "Grandma's Boysenberry Spread", "preco": 25.0000, "estoque": 120},
-                    {"id": 7, "nome": "Uncle Bob's Organic Dried Pears", "preco": 30.0000, "estoque": 15},
-                    {"id": 8, "nome": "Northwoods Cranberry Sauce", "preco": 40.0000, "estoque": 6},
-                    {"id": 9, "nome": "Mishi Kobe Niku", "preco": 97.0000, "estoque": 29},
-                    {"id": 10, "nome": "Ikura", "preco": 31.0000, "estoque": 31}
+                {"id": 1, "nome": "Chai", "preco": 18.0000, "estoque": 39},
+                {"id": 2, "nome": "Chang", "preco": 19.0000, "estoque": 17},
+                {"id": 3, "nome": "Aniseed Syrup", "preco": 10.0000, "estoque": 13},
+                {"id": 4, "nome": "Chef Anton's Cajun Seasoning", "preco": 22.0000, "estoque": 53},
+                {"id": 5, "nome": "Chef Anton's Gumbo Mix", "preco": 21.3500, "estoque": 0},
+                {"id": 6, "nome": "Grandma's Boysenberry Spread", "preco": 25.0000, "estoque": 120},
+                {"id": 7, "nome": "Uncle Bob's Organic Dried Pears", "preco": 30.0000, "estoque": 15},
+                {"id": 8, "nome": "Northwoods Cranberry Sauce", "preco": 40.0000, "estoque": 6},
+                {"id": 9, "nome": "Mishi Kobe Niku", "preco": 97.0000, "estoque": 29},
+                {"id": 10, "nome": "Ikura", "preco": 31.0000, "estoque": 31}
                 ]`;
                     </code>
                 </pre>

@@ -1,4 +1,4 @@
-let cliente = {
+let cliente ={
     nome: 'Gabi',
     email: 'gabrielle.ulisses@aluno.ifsp.edu.br',
     isAdmin: true,
@@ -9,15 +9,15 @@ let cliente = {
 };
 
 let produtos = [
-    {
+{
         nome: 'Sabão',
         preco: 2.40
     },
-    {
+{
         nome: 'Arroz',
         preco: 40.00
     },
-    {
+{
         nome: 'Café',
         preco: 20.00
     },

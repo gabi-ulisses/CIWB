@@ -1,4 +1,4 @@
-const data = {
+const data ={
     "cep": "14802-000",
     "logradouro": "Avenida Padre Francisco Sales Colturato",
     "complemento": "lado par",
@@ -14,7 +14,7 @@ const data = {
     "siafi": "6163"
 };
 
-function preencher() {
+function preencher(){
     document.getElementById("logradouro").value = data.logradouro;
     document.getElementById("bairro").value = data.bairro;
     document.getElementById("cidade").value = data.localidade;

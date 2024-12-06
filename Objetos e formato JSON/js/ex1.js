@@ -1,6 +1,6 @@
-function exercicio1() {
+function exercicio1(){
     let produto = [
-        { 
+    { 
             id: 2,
             nome: "Pincel para quadro branco",
             preco: 6.90

@@ -4,7 +4,7 @@ function calcularMediana(array, tamanho){
     let mediana = 0;
 
     if(tamanho % 2 == 0){
-        mediana = (array[(meio - 1)] + array[meio])/2;
+        mediana =(array[(meio - 1)] + array[meio])/2;
     }else{
         mediana = array[meio - 1];
     }
