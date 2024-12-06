@@ -31,7 +31,7 @@ function adicionarAoCarrinho(nomeProduto, precoProduto) {
 
     if (!produtoExistente) {
         const novoItem = document.createElement('li');
-        novoItem.textContent = `${nomeProduto} - ${precoProduto} | Quantidade: 1`;
+        novoItem.textContent = `${nomeProduto} - ${precoProduto} | Quantidade: `;
 
         const quantidade = document.createElement('span');
         quantidade.className = 'quantidade';
