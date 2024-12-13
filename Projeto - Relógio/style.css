@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+img {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.oferta {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+#timer {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff5733;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
