@@ -36,7 +36,7 @@ async function buscarClima(cidade) {
         climaDescricao.textContent = dataClima.weather[0].description;
 
         let climaTemperatura = document.querySelector('#climaTemperatura');
-        climaTemperatura.textContent = dataClma.main.temp + '°C';
+        climaTemperatura.textContent = dataClima.main.temp + '°C';  // Corrigido aqui
 
         let climaUmidade = document.querySelector('#climaUmidade');
         climaUmidade.textContent = dataClima.main.humidity + '%';
@@ -52,6 +52,7 @@ async function buscarClima(cidade) {
         alert('Erro ao buscar informações climáticas');
     }
 }
+
 
 function main() {
     let btnkosmos = document.querySelector('#buscarKosmos');

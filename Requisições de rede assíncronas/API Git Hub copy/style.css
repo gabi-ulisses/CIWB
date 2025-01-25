@@ -195,3 +195,7 @@ header {
     background-image: url("fundo.jpg");
     background-size: cover;
 }
+
+footer{
+    text-align: center;
+}
