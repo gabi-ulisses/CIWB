@@ -1,82 +1,197 @@
-
-body{
-    padding-bottom: 20% !important;
+body {
+    padding-bottom: 0%;
     background-color: #ffffff;
-    background-image: url("fundo.jpg");
-    background-size: cover;
 }
 
- section{
-    padding-bottom: 0px !important;
+section {
+    padding-bottom: 0px;
     margin: 0;
 }
 
-header{
-    padding-top: 50px;
-    font-size: 50px;
+header {
+    padding: 50px;
+    font-size: 30px;
+    background-color: #172d41;
+    text-align: center;
+    color: #f4ecff;
 }
 
-/* Limitar a largura do card */
+/* Estilos específicos para a introdução */
+.introduction {
+    background-color: #172d41e6;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.introduction h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    margin: 10px 0;
+}
+
+.introduction a {
+    color: #ff6320;
+    text-decoration: underline;
+}
+
+.introduction a:hover {
+    color: #ff6320;
+}
+
+/* Seção clima */
+#clima {
+    background-color: #ff6320;
+    padding-bottom: 50px;
+}
+
+#clima h4 {
+    color: #f4ecff;
+    margin-bottom: 30px;
+}
+
+#clima .input {
+    background-color: #172d41e6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#clima .input:focus {
+    border-color: #020815df;
+    box-shadow: 0px 0px 0px 1px #484848;
+}
+
+#clima label {
+    color: #f4ecff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#clima .button.is-black {
+    background-color: #172d41e6;
+}
+
+#clima .button.is-black:hover {
+    background-color: #112232e6;
+}
+
+#clima .content {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #172d41e6;
+    color: #f4ecff;
+}
+
+#climaDescricao {
+    text-transform: capitalize;
+}
+
+#clima .content p {
+    display: flex;
+    align-items: center;
+}
+
+#climaIcone {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+/* Seção Kosmos */
+
+#kosmos #image {
+    display: none;
+}
+
 .card {
-    width: 100% !important;
+    width: 100%;
     max-width: 100%;
-    max-height: 30% !important;
-    background-color: #020815df !important;
+    background-color: #020815df;
     display: inline-flex;
-    justify-content:center;
+    justify-content: center;
 }
 
-.card-image{
+.card-image {
     padding: 10px;
-    width: 40% !important;
+    width: 40%;
     height: auto;
 }
 
-.card-content{
+.card-content {
     width: 60%;
 }
-.card-image img{
+
+.card-image img {
     border-radius: 10px;
 }
 
-
-/* Ajuste para margens entre título e subtítulo */
-.title, .subtitle {
-    margin: 0; /* Remove margens extras */
+#kosmos .title,
+#kosmos .subtitle {
+    margin: 0;
 }
 
-
-input[type='date']{
+#kosmos input[type="date"] {
     width: auto;
     height: 40px;
     font-size: 17px;
-    border: none;
-    padding: 10px;
     border: 1px solid #303030;
     padding: 10px;
     border-radius: 4px;
     background-image: url("stars.jpg");
     background-size: cover;
     color: rgb(255, 255, 255);
+    margin-top: 10px;
 }
 
-input[type="date"]:focus {
-    box-shadow: 0px 0px 0px 1px #484848; /* Cor de sombra */
+#kosmos #buscarKosmos{
+    margin-top: 10px;
+    background-color: #112232e6;
+}
+
+#kosmos input[type="date"]:focus {
+    box-shadow: 0px 0px 0px 1px #484848;
     background-color: #f4ecff;
     outline: none;
 }
 
-#explicacao{
+#explicacao {
     text-align: left;
-    color: aliceblue;
+    color: #ffffff;
 }
 
-#title{
-    color: aliceblue;
+#kosmos #title {
+    color: #ffffff;
 }
 
-label{
+#kosmos h4{
     color: #172d41;
-    font-weight: 800;
-    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#kosmos #desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #172d41;
+    width: 50%;
+}
+
+#kosmos label {
+    color: #253d52;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#kosmos {
+    background-image: url("fundo.jpg");
+    background-size: cover;
 }
